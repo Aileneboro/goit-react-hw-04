@@ -21,7 +21,11 @@ const ImageModal = ({
     >
       <div>
         <div>
-          <img src={imageSrc} alt={imageAltDescription} />
+          <img
+            className={css.modalImage}
+            src={imageSrc}
+            alt={imageAltDescription}
+          />
         </div>
         <div className={css.modalText}>
           <p>{imageDescription}</p>
