@@ -1,7 +1,9 @@
+import css from "./ErrorMessage.module.css";
+
 const ErrorMessage = ({ message }) => {
   return (
     <div>
-      <p>{message}</p>
+      <p className={css.errorText}>{message}</p>
     </div>
   );
 };

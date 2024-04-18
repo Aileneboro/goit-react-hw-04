@@ -28,7 +28,7 @@ const App = () => {
     try {
       const data = await fetchApi(topic, 1);
       if (data.results.length === 0) {
-        setError("Sorry... there are no images for your search");
+        setError("Sorry... there are no images for your search!");
       } else {
         setImages(data.results);
         setShowBtn(data.total_pages && data.total_pages !== 1);

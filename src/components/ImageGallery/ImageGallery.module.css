@@ -1,18 +1,17 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 34px;
+  gap: 12px;
   justify-content: center;
 }
 
 .galleryItem {
-  width: calc(25% - 34px);
+  width: calc(100% / 4 - 36px);
   color: #000;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   list-style: none;
-  border-radius: 4px;
 }
 
 .galleryItem:hover {
