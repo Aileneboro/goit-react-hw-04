@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Toaster } from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 import SearchBar from "../SearchBar/SearchBar";
 import ImageGallery from "../ImageGallery/ImageGallery";
 import Loader from "../Loader/Loader";
@@ -68,7 +68,7 @@ const App = () => {
   useEffect(() => {
     if (!query) return;
     handleSearch(query);
-  }, [query, page]);
+  }, [query]);
 
   return (
     <div>
